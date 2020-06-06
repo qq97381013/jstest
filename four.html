@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+   .container {
+    width: 400px;
+    height: 400px;
+    border: 3px solid red;
+    margin-bottom: 20px;
+   }
+   #number {
+    display: block;
+    width: 150px;
+    height: 30px;
+    border: #FF0000 solid 1px;
+    float: left;
+    padding-left: 15px;
+   }
+   .button {
+    float: left;
+    display: block;
+    width: 150px;
+    height: 34px;
+    margin: 0 20px;
+   }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <h1>效果图</h1>
+   <img src="./img/75751C63-9900-48A3-AC1B-9AF0A9664C2B.png" style="width: 300;height: 300px;" />
+  </div>
+  <input type="text" name="name" placeholder="请输入阶乘的数字" id="number" />
+  <input type="button" name="button" class="button" value="第一题" onclick="getWhatDay()" />
+  <br/>
+  <p>结果:<p id="result" style="color: #FF0000;font-size: 20px;";></p></p>
+  
+ </body>
+ <script>
+  // 
+  function getWhatDay() {
+   // 结果
+   var result = "请把对应的结果赋值到这个变量";
+   // 键盘输入的值
+   var number = document.getElementById("number").value;
+   //javascripta中从键盘接收整数参数，
+   //请用while循环写出用户输入的阶乘
+   
+   
+   //输出的结果
+   document.getElementById("result").innerHTML = "12 ! =1*2*3*4*5*6*7*8*9*10*11*12=479001600";
+  }
+  
+ </script>
+
+</html>

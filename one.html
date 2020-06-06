@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.container {
+				width: 400px;
+				height: 400px;
+				border: 3px solid red;
+				margin-bottom: 20px;
+			}
+			#score {
+				display: block;
+				width: 150px;
+				height: 30px;
+				border: #FF0000 solid 1px;
+				float: left;
+				padding-left: 15px;
+			}
+			.button {
+				float: left;
+				display: block;
+				width: 150px;
+				height: 34px;
+				margin: 0 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>效果图</h1>
+			<img src="./img/WeChat143a16f66ffa0dc25dc3c10a0e7c0c41.png" style="width: 300;height: 300px;" />
+		</div>
+		<input type="text" name="name" placeholder="请输入蒲小燕的分数" id="score" />
+		<input type="button" name="button" class="button" value="第一题" onclick="getScore()" />
+		<br/>
+		<p>结果:<p id="result" style="color: #FF0000;font-size: 20px;";></p></p>
+		
+	</body>
+	<script>
+		// 从键盘输入蒲小燕的期末成绩:
+		// 当成绩为100时，'奖励小星星'
+		// 当成绩为[80-99]时，'奖励一台iphone11'
+		// 当成绩为[60-80]时，'奖励多学习'
+		// 其他时，什么奖励也没有			
+		function getScore() {
+			// 结果
+			var result = "请把对应的分数赋值到这个变量";
+			// 键盘输入的值
+			var score = document.getElementById("score").value;
+			
+			//用 switch 做
+			//需要你表演的地方  score 是键盘输入的0分例如 0 ，把结果赋值到result="0"
+			
+			//输出的结果
+		    document.getElementById("result").innerHTML = result;
+		}
+		
+	</script>
+
+</html>
